@@ -1,5 +1,5 @@
 {
-  "name": "daniela_costa_ada/php_tips",
+  "name": "daniela_costa_ada/php_immersion",
   "description": "001",
   "minimum-stability": "stable",
   "license": "MIT",
@@ -22,7 +22,7 @@
     ]
   },
   "require": {
-    "phpmailer/phpmailer": "v6.6.*",
+    "phpmailer/phpmailer": "v6.7.*",
     "coffeecode/datalayer": "1.1.*"
   }
 }
