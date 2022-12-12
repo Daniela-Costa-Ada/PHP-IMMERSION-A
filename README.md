@@ -4,6 +4,9 @@
 </p>
 
 ## 🛠 &nbsp;Tech Stack
+![PHP](https://img.shields.io/badge/-Php-05122A?style=flat&logo=php)&nbsp;
+![Composer](https://img.shields.io/badge/-Composer-05122A?style=flat&logo=composer)&nbsp;
+![Mysql](https://img.shields.io/badge/-Mysql-05122A?style=flat&logo=mysql)&nbsp;
 
 :construction: Project under construction :construction:
 
