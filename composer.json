@@ -1,0 +1,28 @@
+{
+  "name": "daniela_costa_ada/php_tips",
+  "description": "001",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dani Costa",
+      "email": "siedanipereira@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "Source\\": "source/"
+    },
+    "files": [
+      "source/Config.php"
+    ]
+  },
+  "require": {
+    "phpmailer/phpmailer": "v6.6.*",
+    "coffeecode/datalayer": "1.1.*"
+  }
+}
