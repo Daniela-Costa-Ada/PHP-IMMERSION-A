@@ -13,7 +13,7 @@
 # :hammer: Project features
 
 - `Feature 1`: Crud on PDO
-- `Feature 2`: Authenticated emails in smtp with phpmailer
+- `Feature 2`: Authenticated emails in smtp with phpmailer, using SendGrid
 - `Feature 3`: ?
 - `Feature 4`: ?
 - `Feature 5`: ?
@@ -33,6 +33,7 @@
 
 - ``PHP``
 - ``Composer``
-- ``PHPmailer``
-- ``DataLayer``
+- ``PHPmailer`` - ``SMTP`` - ``SendGrid``
+- ``DataLayer`` - ``PDO`` - ``PhpAdmin`` - ``MariaDB`` 
+- ``Development Enviroment: Linux Xampp/Lampp`` 
 - ``...``
