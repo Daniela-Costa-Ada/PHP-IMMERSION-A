@@ -1,21 +1,22 @@
 <?php
+const HG_API_KEY = 'find at site';
 /*HOST SMTP
 After configuring this data below, everything is ready to send emails
 cpanel, faq, hosting support to consult these settings, mail client manual settings(ssl/tls)
-you can use sendgrid-> setup guide -> smtp relay to setup your datas*/
+you can use sendgrid-> setup guide -> smtp relay to setup your datas */
 const MAIL = [
     "host" => "",
     "port" => "",
     "username" => "",
     "passwd" => "",
     "from_name" => "Daniela Costa",
-    "from_email" => "a@gmail.com"
+    "from_email" => "xxxx@gmail.com"
 ];
 const DATA_LAYER_CONFIG = [
     "driver" => "mysql",
     "host" => "localhost",
     "port" => "3306",
-    "dbname" => "datalayers",
+    "dbname" => "fandomPHP",
     "username" => "root",
     "passwd" => "",
     "options" => [

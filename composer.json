@@ -23,6 +23,7 @@
   },
   "require": {
     "phpmailer/phpmailer": "v6.7.*",
-    "coffeecode/datalayer": "1.1.*"
+    "coffeecode/datalayer": "1.1.*",
+    "coffeecode/router": "2.0.1"
   }
 }
