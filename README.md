@@ -15,7 +15,8 @@
 - `Feature 1`: Crud on PDO
 - `Feature 2`: Authenticated emails in smtp with phpmailer, using SendGrid
 - `Feature 3`: Api to request a quotation dollar or any quotations
-- `Feature 4`: ?
+- `Feature 4`: MVC -> Layer Controller and Routes
+- `Feature 5`: ?
 
 # 📁 Project access
 
