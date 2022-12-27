@@ -3,7 +3,7 @@
         'name' => 'daniela_costa_ada/php_immersion',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '2244a75d1de08959a3da49f37060f312eb4ab188',
+        'reference' => 'c3274a58a8b7f7947e92b2b67ec15c27013a21ac',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -31,7 +31,7 @@
         'daniela_costa_ada/php_immersion' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '2244a75d1de08959a3da49f37060f312eb4ab188',
+            'reference' => 'c3274a58a8b7f7947e92b2b67ec15c27013a21ac',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

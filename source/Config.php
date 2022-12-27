@@ -1,4 +1,5 @@
 <?php
+const URL_BASE = "http://localhost/php_tips";
 const HG_API_KEY = 'find at site';
 /*HOST SMTP
 After configuring this data below, everything is ready to send emails

@@ -8,14 +8,15 @@
 
 <?php
 require __DIR__ ."/vendor/autoload.php";
-
+use Source\Support\Email;
 use Source\Modules\Hg_api;
 use Source\Crud\Crud;
+use CoffeeCode\Router\Router;
 
 /**
  * Send Email
  */
-$email = new \Source\Support\Email();
+$email = new Email();
 $email->add(
     "assunto do Email",
     "<h1> Corpo do email teste </h1>",
@@ -36,8 +37,8 @@ if (!$email->error()) {
 //its working, just set up config.json const MAIL
 
 /**
- * Api Request, Dollar Quotation
- */
+* Api Request, Dollar Quotation
+*/
 $hg = new Hg_api(HG_API_KEY);
 $dolar = $hg->dolar_quotation();
 $dolar['buy'] = number_format($dolar['buy'], 2, '.', '');
@@ -54,12 +55,69 @@ $dolar['buy'] = number_format($dolar['buy'], 2, '.', '');
 $crud = new Crud();
 //var_dump($crud->addUser());
 //var_dump($crud->deleteUser(4));
-var_dump($crud->updateUser(13));
+//var_dump($crud->updateUser(13));
 echo $crud->read();
 ?>
 
 
+<?php
+/**
+ * Controllers MVC
+ */
+$router = new Router(URL_BASE);
+/**
+ * Controllers
+ */
+$router->namespace("Source\App");
 
+/**
+ * WEB
+ * home
+ */
+$router->group(null);
+$router->get("/", "Web:home");
+$router->get("/{filter}/{page}", "Web:home");
+
+/**
+ * WEB
+ * blog
+ */
+$router->group("blog");
+$router->get("/", "Web:blog");
+$router->get("/{post_uri}", "Web:post");
+$router->get("/categoria", "Web:category");
+$router->get("/categoria/{cat_uri}", "Web:category");
+
+/**
+ * WEB
+ * contact
+ */
+$router->group("contato");
+$router->get("/", "Web:contact");
+$router->post("/", "Web:contact");
+$router->delete("/", "Web:contact");
+$router->get("/{sector}", "Web:contact");
+
+/**
+ * ADMIN
+ * home
+ */
+$router->group("admin");
+$router->get("/", "Admin:home");
+
+/**
+ * WEB
+ * erros
+ */
+$router->group("ooops");
+$router->get("/{errcode}", "Web:error");
+
+$router->dispatch();
+
+if ($router->error()) {
+    $router->redirect("/ooops/{$router->error()}");
+}
+?>
 </body>
 </html>
 
