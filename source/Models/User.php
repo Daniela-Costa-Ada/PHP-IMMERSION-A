@@ -8,7 +8,7 @@ class User extends DataLayer
 {
     public function __construct()
     {
-        parent::__construct("users", ["first_name", "last_name"], "id", true);
+        parent::__construct("users", ["first_name", "last_name"], "id", "false");
     }
 //table connection
     public function addresses()

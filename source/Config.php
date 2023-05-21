@@ -1,4 +1,5 @@
 <?php
+
 const URL_BASE = "http://localhost/php_tips";
 const HG_API_KEY = 'find at site';
 /*HOST SMTP
@@ -16,8 +17,8 @@ const MAIL = [
 const DATA_LAYER_CONFIG = [
     "driver" => "mysql",
     "host" => "localhost",
-    "port" => "3306",
-    "dbname" => "fandomPHP",
+    "port" => "4306",
+    "dbname" => "ffo",
     "username" => "root",
     "passwd" => "",
     "options" => [

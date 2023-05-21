@@ -13,13 +13,14 @@ use Source\Modules\Hg_api;
 use Source\Crud\Crud;
 use CoffeeCode\Router\Router;
 
+
 /**
  * Send Email
  */
 $email = new Email();
 $email->add(
     "assunto do Email",
-    "<h1> Corpo do email teste </h1>",
+    "<h1> Corpo do email </h1>",
     "Daniela Costa",
     "xxx@gmail.com"
 )->attach(
@@ -53,9 +54,9 @@ $dolar['buy'] = number_format($dolar['buy'], 2, '.', '');
  * Crud
  */
 $crud = new Crud();
-//var_dump($crud->addUser());
-//var_dump($crud->deleteUser(4));
-//var_dump($crud->updateUser(13));
+echo $crud->addUser();
+echo $crud->deleteUser(102);
+//echo $crud->updateUser(6);
 echo $crud->read();
 ?>
 
