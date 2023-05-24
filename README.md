@@ -25,8 +25,6 @@
 # 🛠️ Open and run the project
 
 **...**
-## How is the project?
-
 
 ## ✔️ Techniques and technologies used
 
